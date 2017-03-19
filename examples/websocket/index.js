@@ -8,15 +8,15 @@ var proxy = require('../../index'); // require('http-proxy-middleware');
  * Configure proxy middleware
  */
 var wsProxy = proxy('/', {
-                target: 'http://echo.websocket.org',
-                // pathRewrite: {
-                //  '^/websocket' : '/socket',          // rewrite path.
-                //  '^/removepath' : ''                 // remove path.
-                // },
-                changeOrigin: true,                     // for vhosted sites, changes host header to match to target's host
-                ws: true,                               // enable websocket proxy
-                logLevel: 'debug'
-            });
+    target: 'http://echo.websocket.org',
+    // pathRewrite: {
+    //  '^/websocket' : '/socket',          // rewrite path.
+    //  '^/removepath' : ''                 // remove path.
+    // },
+    changeOrigin: true,                     // for vhosted sites, changes host header to match to target's host
+    ws: true,                               // enable websocket proxy
+    logLevel: 'debug'
+});
 
 var app = express();
 app.use('/', express.static(__dirname));                // demo page
