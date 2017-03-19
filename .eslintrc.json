@@ -1,0 +1,17 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": ["eslint:recommended", "google"],
+    "rules": {
+        "comma-dangle": "off",
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "max-len": ["warn", {"code": 120, "ignoreComments":true, "ignoreTrailingComments": true}],
+        "no-console": "off",
+        "no-multi-spaces": "off",
+        "no-var": "off",
+        "prefer-rest-params": "off",
+        "prefer-spread": "off",
+        "require-jsdoc": "off"
+    }
+}
