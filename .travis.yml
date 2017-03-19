@@ -10,7 +10,7 @@ node_js:
 before_install:
 # https://github.com/npm/npm/issues/11283
 - npm set progress=false
-after_install: npm run lint
+before_script: npm run lint
 after_success: npm run coveralls
 env:
   global:
