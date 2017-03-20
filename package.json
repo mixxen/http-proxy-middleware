@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rm -rf coverage",
-    "lint": "node_modules/.bin/eslint --config=.eslintrc.json --format=codeframe index.js lib examples --color",
+    "lint": "node test/lint.js",
     "test": "npm run lint && mocha --recursive --colors --reporter spec",
     "cover": "npm run clean && istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive --reporter spec && istanbul-coveralls && npm run clean"
@@ -49,7 +49,6 @@
     "express": "^4.14.0",
     "istanbul": "^0.4.5",
     "istanbul-coveralls": "^1.0.3",
-    "jscs": "^3.0.7",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "1.2.0",
     "opn": "^4.0.2",
