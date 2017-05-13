@@ -52,7 +52,7 @@
     "ws": "^1.1.1"
   },
   "dependencies": {
-    "http-proxy": "git+https://github.com/mixxen/node-http-proxy.git#5b0a6c6080b64b05334553455c35161fed35eb10",
+    "http-proxy": "git+https://github.com/mixxen/node-http-proxy.git#a086333e92510cad85c5c140205db622cd344194",
     "is-glob": "^3.1.0",
     "lodash": "^4.17.2",
     "micromatch": "^2.3.11"
